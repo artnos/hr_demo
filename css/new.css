@@ -1,0 +1,138 @@
+.special{
+
+    background-image: url("/images/home-02b.jpg") ;
+    background-size: cover ;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*align-items: flex-end;*/
+    transition: all 1s ease;
+    border-radius: 5px;
+    overflow: hidden;
+    .caption{
+        transition: all 1s ease;
+        height: 25%;
+        padding:0px 20px;
+        background: rgba(24,30,61,.5);
+        justify-content: center;
+        display: flex;
+
+        > div{
+            position: relative;
+            width: 100%;
+        }
+        h3{
+            transition: all 1s ease;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            opacity: 1;
+            position: absolute;
+            top: 0px;
+            a{
+                color: white;
+                :hover{
+                    color: white;
+                }
+            }
+        }
+        p{
+            transition: all 1s ease;
+            opacity: 0;
+            color: white ;
+            padding: 20px;
+            position: absolute;
+            top: calc(50% - 100px);
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+    &:hover{
+        transition: all 1s ease;
+        .caption{
+            height: 100%;
+            background: rgba(24,30,61,.8);
+            transition: all 1s ease;
+            h3{
+                transition: all 1s ease;
+                opacity: 0;
+            }
+            p{
+                transition: all 1s ease;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+.bg-brand-warning{
+    /*background-image:linear-gradient(to bottom, transparent 0%, transparent 25%, #93a5b8 26%,  #93a5b8 100%);*/
+    color: var(--blue);
+    margin-top: 40px;
+    .shell{
+        padding-bottom: 50px;
+        h2{
+           color: var(--blue2);
+            text-shadow: 1px 1px 1px white;
+        }
+    }
+}
+
+.new-row{
+    display: flex;
+    background: #1762aa;
+    height: 500px;
+}
+
+@media (min-width: 992px) {
+    .new-row{
+        height: auto;
+    }
+}
+
+.new-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px !important;
+    > div{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        max-width: 660px;
+        ul{
+            margin-top: 0px;
+        }
+    }
+    .btn{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+.footer .list-inline{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.whyOur{
+    h3{
+        color: var(--blue2);
+        font-size: 22px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+    .shell{
+        max-width: 1300px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
